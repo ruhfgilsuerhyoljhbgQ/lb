@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Infinite Refresh</title>
+    <script type="text/javascript">
+        // 새로 고침을 무한 반복하는 함수
+        function infiniteRefresh() {
+            window.location.reload();
+        }
+
+        // 페이지가 로드되면 새로 고침을 1밀리초마다 반복
+        window.onload = function() {
+            setInterval(infiniteRefresh, 1);
+        };
+    </script>
+</head>
+<body>
+    <p>페이지가 1밀리초마다 무한히 새로 고침됩니다. 테스트 환경에서 사용하세요.</p>
+</body>
+</html>
